@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Goldman', cursive;
+}
+
+body{
+    background: #f7fdff;
+}
+.wave-header{
+
+    background:   linear-gradient(90deg, #04325a, #02182b);
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.5rem;
+    padding: 25px;
+    /* background:   linear-gradient( #04325a, #02182b); */
+    color: aliceblue;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+header nav ul li a{
+    transition-duration: 1s;
+    padding: 15px;
+    margin: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 20px;
+}
+header nav ul li a:hover{
+    transition-duration: 1s;
+    padding: 15px;
+    margin: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    background:linear-gradient(#3edaf1,#00bfff) ;
+    /* background: #244a4d; */
+    border-radius: 10px;
+}
+.clicked{
+    color: aliceblue;
+    background: linear-gradient(#19d5f1,#00bfff);
+}
+.content{
+    text-align: center;
+}
+.what{
+    font-size: 50px;
+}
+.line{
+    width: 70%;
+    margin: 10px auto;
+    border-bottom: 1px solid #94b3bd;
+}
+.big-line{
+    width: 100%;
+    margin: 30px auto;
+    border-bottom: 1px solid #e0e6e9;
+}
+.what-content{
+    width: 70%;
+    margin: 10px auto;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 80px;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.8);
+}
+.box{
+
+    width: 30%;
+    /* border: 2px solid #f6f1f6; */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    
+    border: 2px solid #daf0f1;
+    transition: .7s;
+}
+.box:hover{
+    transition: 1s;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: linear-gradient( #04325a, #02182b);
+    color: aliceblue;
+    border: 2px solid #02182b;
+    box-shadow: 5px 5px 20px #02182b;
+    transition: 0.6s;
+}
+.box:hover .icon{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.icon{
+    font-size:2rem;
+    margin: 20px auto;
+}
+#icon-pic1{
+    background-image: url(../images/oil_pipeline.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    font-size:2rem;
+    margin: 20px auto;
+    border-radius: 50%
+}
+#icon-pic2{
+    background-image: url(../images/architect.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    font-size:2rem;
+    margin: 20px auto;
+    border-radius: 50%
+}
+#icon-pic3{
+    background-image: url(../images/industry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    font-size:2rem;
+    margin: 20px auto;
+    border-radius: 50%
+}
+#icon-pic4{
+    background-image: url(../images/oil-reg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    font-size:2rem;
+    margin: 20px auto;
+    border-radius: 50%
+}
+#icon-pic5{
+    background-image: url(../images/oil-rig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    font-size:2rem;
+    margin: 20px auto;
+    border-radius: 50%
+}
+#icon-pic6{
+    background-image: url(../images/pipeline1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    font-size:2rem;
+    margin: 20px auto;
+    border-radius: 50%
+}
+
+.title{
+    font-size: 30px;
+}
+.title a:hover{
+    color: #00bfff;
+    text-decoration: none;
+}
+.content-content{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.my-btn{
+
+    display: flex;
+    margin: 0 auto;
+    background: linear-gradient(90deg,#f2f, #f29);
+    border: none;
+    padding: 10px 15px;
+    color: aliceblue;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+.anime-div{
+    background-color:#04325a;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -200%;
+    border-radius: 50%;
+    transition: 1s;
+    z-index: -2;
+}
+.my-btn a{
+    z-index: 2;
+    text-decoration: none;
+    color: #daf0f1;
+}
+.my-btn a:hover .anime-div{
+    background-color: #02182b;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+
+
+
+.no{
+    background: #f7fdff;
+}
+
+
+
+#image-container{
+    width: 950px;
+    height: 550px;
+    /* border: 3px solid #00bfff; */
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+
+    transition: 0.4s;
+}
+#image-container:hover{
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+    transform: scale(1.01);
+    transition: .4s;
+}
+
+#image-1{
+    background-image: url(../images/oil_pipeline.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+
+}
+#image-2{
+    background-image: url(../images/pipeline.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+#image-3{
+    background-image: url(../images/oil-reg1.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+
+.move-img{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+
+}
+
+#left{
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#right{
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#left:hover{
+    color: #f29;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#right:hover{
+    color:#f29 ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* footer */
+
+footer{
+    color: #daf0f1;
+    background: linear-gradient(90deg, #04325a, #02182b);
+    width: 100%;
+    text-align: center;
+}
+.footer-content{
+    width: 60%;
+    margin: 0px auto;
+    padding-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.social-media-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    width: 10%;
+    margin: 0 auto;
+}
+
+.facebook-icon{
+    fill: #00a6ff;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.twitter-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.linkedin-icon{
+    /* fill: #c47; */
+    fill: #0077B7;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.facebook-icon:hover{
+    transform: scale(1.2);
+    fill: #8ed8ff;
+    transition: 0.2s;
+}
+
+.twitter-icon:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.linkedin-icon:hover{
+    transform: scale(1.2);
+    fill: #7cd1ff;
+    transition: 0.2s;
+}
+.phone-number{
+    color: #19f181;
+
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    background: #021d32;
+}
+.footer-nav-ul{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-nav-ul li a{
+    color: rgb(196, 26, 117);
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.footer-nav-ul li{
+    padding: 5px;
+    border-radius: 4px;
+}
+.footer-nav-ul li:hover{
+
+    background: #064a85;
+    text-decoration: underline;
+}
+.footer-nav-ul li:hover a{
+        color: rgb(255, 27, 148);
+}
+
+.copy-right{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background: #011220;
+    padding: 10px;
+}
+/* end footer */
+
+
+
+
+/* -------about us style-------- */
+
+img{
+    width: 100%;
+    height: 30vh;
+    
+}
+.about-us{
+    display: flex;
+}
+.about-us-title{
+
+}
+.title-line{
+    border-bottom: 1px solid #94b3bd;
+    margin: 20px 0px;
+}
+.about-us-content{
+    width: 60%;
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: 'Montserrat', sans-serif;
+}
+.every-page-links{
+    width: 40%;
+}
+.last-content{
+
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+
+    font-family: 'Montserrat', sans-serif;
+}
+.last-content ul{
+    list-style: circle;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10%;
+}
+/* ------ end about us style-------- */
+
+table{
+    text-align: center;
+}
+/* marquee */
+
+#marquee{
+    margin: 10px auto;
+    width: 70%;
+    height: 100px;
+    box-shadow: 0px 0px 20px #011220;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+#marquee-1{
+    background-image: url(../images/client1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%
+}
+#marquee-2{
+    background-image: url(../images/client1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* end marquee */
+/* every page links */
+.every-page-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+}
+.links-box{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( #04325a, #02182b);
+    /* background: linear-gradient(#440533,#02182b); */
+    color: #e0e6e9;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.every-page-links-title{
+    
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.every-page-links-links{
+    text-decoration: none;
+    /* color: #f29 */
+    color: #06b7cb;
+
+}
+.every-page-links-links:hover{
+    text-decoration: none;
+    /* color: rgb(135, 9, 76); */
+    color: #068896;
+}
+/* end every page links */
